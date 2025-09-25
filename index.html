@@ -33,7 +33,7 @@
   </header>
 
   <main class="max-w-6xl mx-auto px-4 sm:px-5 md:px-6 py-5 grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-    <!-- Left column (mobile first) -->
+    <!-- Left column -->
     <div class="lg:col-span-2 space-y-4 sm:space-y-6 order-1">
       <!-- Event card -->
       <section class="shadow-lg rounded-2xl border bg-white/95">
@@ -54,12 +54,12 @@
           <div class="mt-4">
             <div class="text-xs uppercase tracking-wide text-neutral-500 mb-2">Head to Head</div>
             <div class="grid grid-cols-2 items-center rounded-t-xl border">
-              <button class="px-4 py-3 text-left font-medium hover:bg-neutral-50 rounded-tl-xl">Gus</button>
-              <button class="text-right px-4 py-3 font-semibold text-neutral-900 hover:bg-neutral-50 rounded-tr-xl">$1.92</button>
+              <div class="px-4 py-3 font-medium">Gus</div>
+              <div class="text-right px-4 py-3 font-semibold text-neutral-900">$1.92</div>
             </div>
             <div class="grid grid-cols-2 items-center border-x border-b rounded-b-xl">
-              <button class="px-4 py-3 text-left font-medium hover:bg-neutral-50 rounded-bl-xl">Jeffrey</button>
-              <button class="text-right px-4 py-3 font-semibold text-neutral-900 hover:bg-neutral-50 rounded-br-xl">$1.72</button>
+              <div class="px-4 py-3 font-medium">Jeffrey</div>
+              <div class="text-right px-4 py-3 font-semibold text-neutral-900">$1.72</div>
             </div>
           </div>
         </div>
@@ -77,35 +77,20 @@
           </div>
           <div class="grid grid-cols-12 border-t">
             <div class="col-span-7 sm:col-span-8 px-4 py-3">Jabulani 22km</div>
-            <div class="col-span-5 sm:col-span-4 px-4 py-3 flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M8 21h8"/><path d="M12 17a5 5 0 1 0-5-5 5 5 0 0 0 5 5Z"/><path d="m15 11-3 3-2-2"/>
-              </svg>
-              <span class="font-medium">Jeffrey</span>
-            </div>
+            <div class="col-span-5 sm:col-span-4 px-4 py-3">🏆 Jeffrey</div>
           </div>
           <div class="grid grid-cols-12 border-t">
             <div class="col-span-7 sm:col-span-8 px-4 py-3">UTA100</div>
-            <div class="col-span-5 sm:col-span-4 px-4 py-3 flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M8 21h8"/><path d="M12 17a5 5 0 1 0-5-5 5 5 0 0 0 5 5Z"/><path d="m15 11-3 3-2-2"/>
-              </svg>
-              <span class="font-medium">Jeffrey</span>
-            </div>
+            <div class="col-span-5 sm:col-span-4 px-4 py-3">🏆 Jeffrey</div>
           </div>
           <div class="grid grid-cols-12 border-t rounded-b-2xl">
             <div class="col-span-7 sm:col-span-8 px-4 py-3">City2Surf</div>
-            <div class="col-span-5 sm:col-span-4 px-4 py-3 flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M8 21h8"/><path d="M12 17a5 5 0 1 0-5-5 5 5 0 0 0 5 5Z"/><path d="m15 11-3 3-2-2"/>
-              </svg>
-              <span class="font-medium">Gus</span>
-            </div>
+            <div class="col-span-5 sm:col-span-4 px-4 py-3">🏆 Gus</div>
           </div>
         </div>
       </section>
 
-      <!-- Predicted Times -->
+      <!-- Predicted Times (scrollable fix) -->
       <section class="shadow-lg rounded-2xl border bg-white/95">
         <header class="px-4 sm:px-5 pt-4 sm:pt-5 pb-2 sm:pb-3 flex items-center justify-between">
           <h2 class="text-base font-semibold">Predicted Finish Times</h2>
@@ -116,56 +101,47 @@
             <span>Under / Over</span>
           </div>
         </header>
-        <div class="text-sm">
-          <div class="grid grid-cols-12 text-[11px] sm:text-xs uppercase tracking-wide text-neutral-500 border-t">
-            <div class="col-span-5 sm:col-span-4 px-2 sm:px-4 py-2">Runner</div>
-            <div class="col-span-2 px-2 sm:px-4 py-2 text-right">Under 5h</div>
-            <div class="col-span-2 px-2 sm:px-4 py-2 text-right">5.0–5.5h</div>
-            <div class="col-span-2 px-2 sm:px-4 py-2 text-right">Over 5.5h</div>
-            <div class="col-span-1 sm:col-span-2 px-2 sm:px-4 py-2 text-right">Predicted</div>
-          </div>
-
-          <div class="grid grid-cols-12 border-t items-center">
-            <div class="col-span-5 sm:col-span-4 px-2 sm:px-4 py-3 flex items-center gap-3">
-              <div class="w-8 h-8 rounded-full bg-neutral-200 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                </svg>
-              </div>
-              <div class="font-medium">Gus</div>
+        <!-- scrollable container -->
+        <div class="overflow-x-auto">
+          <div class="min-w-[480px] text-sm">
+            <div class="grid grid-cols-12 text-[11px] sm:text-xs uppercase tracking-wide text-neutral-500 border-t">
+              <div class="col-span-4 px-2 sm:px-4 py-2">Runner</div>
+              <div class="col-span-2 px-2 sm:px-4 py-2 text-right">Under 5h</div>
+              <div class="col-span-2 px-2 sm:px-4 py-2 text-right">5.0–5.5h</div>
+              <div class="col-span-2 px-2 sm:px-4 py-2 text-right">Over 5.5h</div>
+              <div class="col-span-2 px-2 sm:px-4 py-2 text-right">Predicted</div>
             </div>
-            <div class="col-span-2 px-2 sm:px-4 py-3 text-right"><span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-medium border bg-white">$5.90</span></div>
-            <div class="col-span-2 px-2 sm:px-4 py-3 text-right"><span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-medium border bg-green-600 text-white border-green-600">$1.55</span></div>
-            <div class="col-span-2 px-2 sm:px-4 py-3 text-right"><span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-medium border bg-white">$3.60</span></div>
-            <div class="col-span-1 sm:col-span-2 px-2 sm:px-4 py-3 text-right font-semibold">5:12:11</div>
-          </div>
 
-          <div class="grid grid-cols-12 border-t items-center rounded-b-2xl">
-            <div class="col-span-5 sm:col-span-4 px-2 sm:px-4 py-3 flex items-center gap-3">
-              <div class="w-8 h-8 rounded-full bg-neutral-200 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                </svg>
+            <div class="grid grid-cols-12 border-t items-center">
+              <div class="col-span-4 px-2 sm:px-4 py-3 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-neutral-200 flex items-center justify-center">👤</div>
+                <div class="font-medium">Gus</div>
               </div>
-              <div class="font-medium">Jeffrey</div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right">$5.90</div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right bg-green-600 text-white rounded-full">$1.55</div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right">$3.60</div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right font-semibold">5:12:11</div>
             </div>
-            <div class="col-span-2 px-2 sm:px-4 py-3 text-right"><span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-medium border bg-white">$5.50</span></div>
-            <div class="col-span-2 px-2 sm:px-4 py-3 text-right"><span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-medium border bg-green-600 text-white border-green-600">$1.50</span></div>
-            <div class="col-span-2 px-2 sm:px-4 py-3 text-right"><span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-medium border bg-white">$3.70</span></div>
-            <div class="col-span-1 sm:col-span-2 px-2 sm:px-4 py-3 text-right font-semibold">5:07:34</div>
+
+            <div class="grid grid-cols-12 border-t items-center rounded-b-2xl">
+              <div class="col-span-4 px-2 sm:px-4 py-3 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-neutral-200 flex items-center justify-center">👤</div>
+                <div class="font-medium">Jeffrey</div>
+              </div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right">$5.50</div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right bg-green-600 text-white rounded-full">$1.50</div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right">$3.70</div>
+              <div class="col-span-2 px-2 sm:px-4 py-3 text-right font-semibold">5:07:34</div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Odds Boost (Mitch) - on mobile, show within left column; on desktop, we also show a compact card in right column below -->
+      <!-- Odds Boost (mobile) -->
       <section class="shadow-lg rounded-2xl border bg-white/95 lg:hidden">
-        <div class="p-4 sm:p-5 flex items-center justify-between gap-4">
+        <div class="p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
           <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-green-600/10 text-green-700 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2v4"/><path d="M5.2 6.2 7 8"/><path d="m18.8 6.2-1.8 1.8"/><path d="M2 13h4"/><path d="M18 13h4"/><path d="M5.2 19 7 17.2"/><path d="M18.8 19 17 17.2"/><circle cx="12" cy="13" r="3"/>
-              </svg>
-            </div>
+            <div class="w-9 h-9 rounded-full bg-green-600/10 text-green-700 flex items-center justify-center">🔥</div>
             <div>
               <div class="text-sm font-medium">Other Popular Bets – Odds Boost!</div>
               <div class="text-xs text-neutral-600">$2.40 → $2.80</div>
@@ -179,7 +155,7 @@
 
     <!-- Right column -->
     <div class="space-y-4 sm:space-y-6 order-2 lg:order-none">
-      <!-- Bet slip (sticky only on desktop) -->
+      <!-- Bet Slip -->
       <section class="shadow-lg rounded-2xl border bg-white/95 lg:sticky lg:top-16">
         <header class="px-4 sm:px-5 pt-4 sm:pt-5 pb-2 sm:pb-3">
           <h2 class="text-base font-semibold">Bet Slip</h2>
@@ -199,7 +175,7 @@
         </div>
       </section>
 
-      <!-- Popular bets -->
+      <!-- Popular Bets -->
       <section class="shadow-lg rounded-2xl border bg-white/95">
         <header class="px-4 sm:px-5 pt-4 sm:pt-5 pb-2">
           <h2 class="text-base font-semibold">Popular Bets</h2>
@@ -222,13 +198,9 @@
 
       <!-- Odds Boost (desktop) -->
       <section class="hidden lg:block shadow-lg rounded-2xl border bg-white/95">
-        <div class="p-5 flex items-center justify-between gap-4">
+        <div class="p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
           <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-green-600/10 text-green-700 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2v4"/><path d="M5.2 6.2 7 8"/><path d="m18.8 6.2-1.8 1.8"/><path d="M2 13h4"/><path d="M18 13h4"/><path d="M5.2 19 7 17.2"/><path d="M18.8 19 17 17.2"/><circle cx="12" cy="13" r="3"/>
-              </svg>
-            </div>
+            <div class="w-9 h-9 rounded-full bg-green-600/10 text-green-700 flex items-center justify-center">🔥</div>
             <div>
               <div class="text-sm font-medium">Other Popular Bets – Odds Boost!</div>
               <div class="text-xs text-neutral-600">$2.40 → $2.80</div>
